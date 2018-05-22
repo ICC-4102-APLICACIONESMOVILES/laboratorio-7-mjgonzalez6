@@ -24,7 +24,7 @@ public class AlarmActivity extends AppCompatActivity {
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this.getApplicationContext(), 234324243, intent, 0);
         AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
         alarmManager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, 2
-                + (i * 1000), pendingIntent);
+                + (i * 100000), pendingIntent);
         Toast.makeText(this, "Alarm set in " + i + " seconds",
                 Toast.LENGTH_LONG).show();
     }
