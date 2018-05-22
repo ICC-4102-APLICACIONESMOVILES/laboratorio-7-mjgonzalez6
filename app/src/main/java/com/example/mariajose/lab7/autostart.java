@@ -18,7 +18,7 @@ public class AutoStart extends BroadcastReceiver {
     @SuppressLint("UnsafeProtectedBroadcastReceiver")
     public void onReceive(Context context, Intent arg1)
     {
-        Intent intent = new Intent(context, MainService.class);
+        Intent intent = new Intent(context, MainActivity.class);
         context.startService(intent);
         Log.i("Autostart", "started");
 
