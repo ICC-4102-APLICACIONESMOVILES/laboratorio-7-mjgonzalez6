@@ -8,7 +8,7 @@ import android.widget.Toast;
  * Created by MariaJose on 22-05-2018.
  */
 
-public class hello extends Activity {
+public class Hello extends Activity {
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);

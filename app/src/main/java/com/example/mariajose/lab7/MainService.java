@@ -9,7 +9,7 @@ import android.widget.Toast;
  * Created by MariaJose on 22-05-2018.
  */
 
-public class service extends Service{
+public class MainService extends android.app.Service {
 
     private static final String TAG = "MyService";
     @Override
@@ -24,7 +24,7 @@ public class service extends Service{
     @Override
     public void onStart(Intent intent, int startid)
     {
-        Intent intents = new Intent(getBaseContext(), hello.class);
+        Intent intents = new Intent(getBaseContext(), Hello.class);
         intents.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intents);
         Toast.makeText(this, "My Service Started", Toast.LENGTH_LONG).show();
